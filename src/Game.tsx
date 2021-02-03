@@ -3,7 +3,7 @@ import GameType from "types/GameType";
 const Game: GameType = {
 	1: {
 		title:
-			"You wake up in a laboratory, you have a wire attached to you! You see a gun on nearby bench what will you do?",
+			"You wake up in a laboratory, and have a wire attached to your body! There is a gun on nearby on a bench what will you do?",
 		options: [
 			{ title: "Remove the wire and move out of the room!", nextNodeId: 2 },
 			{
@@ -21,7 +21,7 @@ const Game: GameType = {
 	},
 	2: {
 		title:
-			"You are in corridor and see a zombie running towards you what will you do?",
+			"You are in corridor and see a zombie comming towards you what will you do?",
 		options: [
 			{ title: "Run Away in opposite direction", nextNodeId: 5 },
 			{
@@ -41,7 +41,7 @@ const Game: GameType = {
 	},
 	3: {
 		title:
-			"You didn't remove the wire properly resulting in rupturing you skin now you are bleeding! What will you do?",
+			"You didn't remove the wire properly resulting in it rupturing your skin now you are bleeding! What will you do?",
 		defaultNextNode: 4,
 		options: [
 			{ title: "Try to find a first-aid kit in the lab corridor!" },
@@ -62,7 +62,7 @@ const Game: GameType = {
 			},
 			{ title: "Inspect the the door", nextNodeId: 5 },
 			{ title: "Call out `who is there`!", nextNodeId: 7 },
-			{ title: "Retreat from there", nextNodeId: 6 },
+			{ title: "Retreat!", nextNodeId: 6 },
 		],
 	},
 	5: {
